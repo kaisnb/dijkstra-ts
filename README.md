@@ -48,7 +48,7 @@ const result = findShortestPath(new GraphAdapter(graph), startNode, finishNode);
 console.log(result); // { distance: 8, path: [ 'start', 'A', 'D', 'finish' ] }
 ```
 
-Or to obtain a map of the costs of all path and all the calculated parent nodes, call `dijkstra<T>(adapter: IGraphAdapter<T>, startNode: T, finishNode?: T)` instead. It's optional to pass the `finishNode`. In case the `finishNode` is passed (like it's done indirectly when called via `findShortestPath`) the resulting cost and parent maps can be uncomplete because an optimization takes place and the algorithm returns as early as the shortest path to the `finishNode` is found.
+Or to obtain a map of the costs of all paths and all the calculated parent nodes, call `dijkstra<T>(adapter: IGraphAdapter<T>, startNode: T, finishNode?: T)` instead. It's optional to pass the `finishNode`. In case the `finishNode` is passed (like it's done indirectly when called via `findShortestPath`) the resulting cost and parent maps can be uncomplete because an optimization takes place and the algorithm returns as early as the shortest path to the `finishNode` is found.
 
 For more usage examples see the test `test/dijkstra.test.ts` and the example adapters under `test/graphs`.
 
