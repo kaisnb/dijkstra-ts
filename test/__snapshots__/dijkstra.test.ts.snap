@@ -1,0 +1,437 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dijkstra findShortestPath should return distance 0 1`] = `
+Object {
+  "distance": 0,
+  "path": Array [
+    "start",
+    "A",
+    "finish",
+  ],
+}
+`;
+
+exports[`dijkstra findShortestPath should return distance 8 1`] = `
+Object {
+  "distance": 8,
+  "path": Array [
+    "start",
+    "A",
+    "D",
+    "finish",
+  ],
+}
+`;
+
+exports[`dijkstra should calculate all paths in an acyclic graph without negative edges 1`] = `
+Object {
+  "costs": Object {
+    "A": 5,
+    "B": 2,
+    "C": 9,
+    "D": 7,
+    "finish": 8,
+  },
+  "parents": Object {
+    "A": "start",
+    "B": "start",
+    "C": "A",
+    "D": "A",
+    "finish": "D",
+  },
+}
+`;
+
+exports[`dijkstra should use getKey when implemented 1`] = `
+Object {
+  "costs": Object {
+    "A": 5,
+    "B": 2,
+    "C": 9,
+    "D": 7,
+    "finish": 8,
+  },
+  "parents": Object {
+    "A": MyNodeImpl {
+      "edges": Array [
+        MyEdgeImpl {
+          "cost": 5,
+          "node": MyNodeImpl {
+            "edges": Array [
+              MyEdgeImpl {
+                "cost": 4,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 6,
+                      "node": MyNodeImpl {
+                        "edges": Array [
+                          MyEdgeImpl {
+                            "cost": 1,
+                            "node": MyNodeImpl {
+                              "edges": Array [],
+                              "name": "finish",
+                            },
+                          },
+                        ],
+                        "name": "D",
+                      },
+                    },
+                    MyEdgeImpl {
+                      "cost": 3,
+                      "node": MyNodeImpl {
+                        "edges": Array [],
+                        "name": "finish",
+                      },
+                    },
+                  ],
+                  "name": "C",
+                },
+              },
+              MyEdgeImpl {
+                "cost": 2,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 1,
+                      "node": MyNodeImpl {
+                        "edges": Array [],
+                        "name": "finish",
+                      },
+                    },
+                  ],
+                  "name": "D",
+                },
+              },
+            ],
+            "name": "A",
+          },
+        },
+        MyEdgeImpl {
+          "cost": 2,
+          "node": MyNodeImpl {
+            "edges": Array [
+              MyEdgeImpl {
+                "cost": 8,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 4,
+                      "node": MyNodeImpl {
+                        "edges": Array [
+                          MyEdgeImpl {
+                            "cost": 6,
+                            "node": MyNodeImpl {
+                              "edges": Array [
+                                MyEdgeImpl {
+                                  "cost": 1,
+                                  "node": MyNodeImpl {
+                                    "edges": Array [],
+                                    "name": "finish",
+                                  },
+                                },
+                              ],
+                              "name": "D",
+                            },
+                          },
+                          MyEdgeImpl {
+                            "cost": 3,
+                            "node": MyNodeImpl {
+                              "edges": Array [],
+                              "name": "finish",
+                            },
+                          },
+                        ],
+                        "name": "C",
+                      },
+                    },
+                    MyEdgeImpl {
+                      "cost": 2,
+                      "node": MyNodeImpl {
+                        "edges": Array [
+                          MyEdgeImpl {
+                            "cost": 1,
+                            "node": MyNodeImpl {
+                              "edges": Array [],
+                              "name": "finish",
+                            },
+                          },
+                        ],
+                        "name": "D",
+                      },
+                    },
+                  ],
+                  "name": "A",
+                },
+              },
+              MyEdgeImpl {
+                "cost": 7,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 1,
+                      "node": MyNodeImpl {
+                        "edges": Array [],
+                        "name": "finish",
+                      },
+                    },
+                  ],
+                  "name": "D",
+                },
+              },
+            ],
+            "name": "B",
+          },
+        },
+      ],
+      "name": "start",
+    },
+    "B": MyNodeImpl {
+      "edges": Array [
+        MyEdgeImpl {
+          "cost": 5,
+          "node": MyNodeImpl {
+            "edges": Array [
+              MyEdgeImpl {
+                "cost": 4,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 6,
+                      "node": MyNodeImpl {
+                        "edges": Array [
+                          MyEdgeImpl {
+                            "cost": 1,
+                            "node": MyNodeImpl {
+                              "edges": Array [],
+                              "name": "finish",
+                            },
+                          },
+                        ],
+                        "name": "D",
+                      },
+                    },
+                    MyEdgeImpl {
+                      "cost": 3,
+                      "node": MyNodeImpl {
+                        "edges": Array [],
+                        "name": "finish",
+                      },
+                    },
+                  ],
+                  "name": "C",
+                },
+              },
+              MyEdgeImpl {
+                "cost": 2,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 1,
+                      "node": MyNodeImpl {
+                        "edges": Array [],
+                        "name": "finish",
+                      },
+                    },
+                  ],
+                  "name": "D",
+                },
+              },
+            ],
+            "name": "A",
+          },
+        },
+        MyEdgeImpl {
+          "cost": 2,
+          "node": MyNodeImpl {
+            "edges": Array [
+              MyEdgeImpl {
+                "cost": 8,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 4,
+                      "node": MyNodeImpl {
+                        "edges": Array [
+                          MyEdgeImpl {
+                            "cost": 6,
+                            "node": MyNodeImpl {
+                              "edges": Array [
+                                MyEdgeImpl {
+                                  "cost": 1,
+                                  "node": MyNodeImpl {
+                                    "edges": Array [],
+                                    "name": "finish",
+                                  },
+                                },
+                              ],
+                              "name": "D",
+                            },
+                          },
+                          MyEdgeImpl {
+                            "cost": 3,
+                            "node": MyNodeImpl {
+                              "edges": Array [],
+                              "name": "finish",
+                            },
+                          },
+                        ],
+                        "name": "C",
+                      },
+                    },
+                    MyEdgeImpl {
+                      "cost": 2,
+                      "node": MyNodeImpl {
+                        "edges": Array [
+                          MyEdgeImpl {
+                            "cost": 1,
+                            "node": MyNodeImpl {
+                              "edges": Array [],
+                              "name": "finish",
+                            },
+                          },
+                        ],
+                        "name": "D",
+                      },
+                    },
+                  ],
+                  "name": "A",
+                },
+              },
+              MyEdgeImpl {
+                "cost": 7,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 1,
+                      "node": MyNodeImpl {
+                        "edges": Array [],
+                        "name": "finish",
+                      },
+                    },
+                  ],
+                  "name": "D",
+                },
+              },
+            ],
+            "name": "B",
+          },
+        },
+      ],
+      "name": "start",
+    },
+    "C": MyNodeImpl {
+      "edges": Array [
+        MyEdgeImpl {
+          "cost": 4,
+          "node": MyNodeImpl {
+            "edges": Array [
+              MyEdgeImpl {
+                "cost": 6,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 1,
+                      "node": MyNodeImpl {
+                        "edges": Array [],
+                        "name": "finish",
+                      },
+                    },
+                  ],
+                  "name": "D",
+                },
+              },
+              MyEdgeImpl {
+                "cost": 3,
+                "node": MyNodeImpl {
+                  "edges": Array [],
+                  "name": "finish",
+                },
+              },
+            ],
+            "name": "C",
+          },
+        },
+        MyEdgeImpl {
+          "cost": 2,
+          "node": MyNodeImpl {
+            "edges": Array [
+              MyEdgeImpl {
+                "cost": 1,
+                "node": MyNodeImpl {
+                  "edges": Array [],
+                  "name": "finish",
+                },
+              },
+            ],
+            "name": "D",
+          },
+        },
+      ],
+      "name": "A",
+    },
+    "D": MyNodeImpl {
+      "edges": Array [
+        MyEdgeImpl {
+          "cost": 4,
+          "node": MyNodeImpl {
+            "edges": Array [
+              MyEdgeImpl {
+                "cost": 6,
+                "node": MyNodeImpl {
+                  "edges": Array [
+                    MyEdgeImpl {
+                      "cost": 1,
+                      "node": MyNodeImpl {
+                        "edges": Array [],
+                        "name": "finish",
+                      },
+                    },
+                  ],
+                  "name": "D",
+                },
+              },
+              MyEdgeImpl {
+                "cost": 3,
+                "node": MyNodeImpl {
+                  "edges": Array [],
+                  "name": "finish",
+                },
+              },
+            ],
+            "name": "C",
+          },
+        },
+        MyEdgeImpl {
+          "cost": 2,
+          "node": MyNodeImpl {
+            "edges": Array [
+              MyEdgeImpl {
+                "cost": 1,
+                "node": MyNodeImpl {
+                  "edges": Array [],
+                  "name": "finish",
+                },
+              },
+            ],
+            "name": "D",
+          },
+        },
+      ],
+      "name": "A",
+    },
+    "finish": MyNodeImpl {
+      "edges": Array [
+        MyEdgeImpl {
+          "cost": 1,
+          "node": MyNodeImpl {
+            "edges": Array [],
+            "name": "finish",
+          },
+        },
+      ],
+      "name": "D",
+    },
+  },
+}
+`;
