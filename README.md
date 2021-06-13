@@ -54,6 +54,6 @@ For more usage examples see the test `test/dijkstra.test.ts` and the example ada
 
 ## License
 
-Everything in this repository is [licensed under the MIT License][https://github.com/kaisnb/dijkstra-ts/blob/master/license] unless otherwise specified.
+Everything in this repository is [licensed under the MIT License](https://github.com/kaisnb/dijkstra-ts/blob/master/license) unless otherwise specified.
 
 Copyright (c) 2021 Kai Schönberger
